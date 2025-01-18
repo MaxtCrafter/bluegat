@@ -1,0 +1,42 @@
+{
+    "type": "Program",
+    "elements": [
+        {
+            "type": "Window",
+            "name": "main",
+            "attributes": {
+                "title": "Meine App",
+                "size": [800, 600],
+                "color": "lightgray"
+            },
+            "children": [
+                {
+                    "type": "Button",
+                    "name": "greet",
+                    "attributes": {
+                        "text": "Klick mich!",
+                        "position": [100, 100],
+                        "action": "show_message('Hallo, Welt!')"
+                    }
+                },
+                {
+                    "type": "Input",
+                    "name": "username",
+                    "attributes": {
+                        "placeholder": "Dein Name",
+                        "position": [100, 200]
+                    }
+                },
+                {
+                    "type": "Button",
+                    "name": "submit",
+                    "attributes": {
+                        "text": "Senden",
+                        "position": [100, 300],
+                        "action": "show_message('Hallo, ' + username.text + '!')"
+                    }
+                }
+            ]
+        }
+    ]
+}
